@@ -1,0 +1,11 @@
+# Collaboration memory data (stored locally on VPS, not in repo)
+memory/collaboration.jsonl
+memory/export_*.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
