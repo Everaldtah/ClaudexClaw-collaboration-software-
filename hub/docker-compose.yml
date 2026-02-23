@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  claudexclaw-hub:
+    build: .
+    container_name: claudexclaw-hub
+    restart: unless-stopped
+    ports:
+      - "3010:3010"
+    volumes:
+      # Mount the live collaboration memory file from the host
+      - /root/.openclaw/collab:/root/.openclaw/collab:ro
+    environment:
+      - NODE_ENV=production
+      - PORT=3010
+      - COLLAB_FILE=/root/.openclaw/collab/collaboration.jsonl
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3010/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

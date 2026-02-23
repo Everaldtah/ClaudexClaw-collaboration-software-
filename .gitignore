@@ -9,3 +9,8 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Hub build artifacts
+hub/frontend/node_modules/
+hub/backend/node_modules/
+hub/frontend/dist/
