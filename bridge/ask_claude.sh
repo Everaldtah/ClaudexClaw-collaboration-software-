@@ -61,9 +61,9 @@ try:
         try:
             e = json.loads(line.strip())
             entries.append(f\"[{e['timestamp']}] {e['from']} → {e['to']}: {e['message'][:150]}\")
-        except:
+        except Exception:
             pass
-except:
+except Exception:
     pass
 print('\n'.join(entries[-10:]))
 " 2>/dev/null || echo "")
