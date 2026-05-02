@@ -31,7 +31,7 @@ export function OpenClawMascot({ size = 80, animate = false, status = 'idle' }) 
         <svg
           viewBox="0 0 120 120"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
           style={{ display: 'none', width: '90%', height: '90%' }}
         >
           <defs>
@@ -126,7 +126,7 @@ export function ClaudeCodeMascot({ size = 80, animate = false, status = 'idle' }
         <svg
           viewBox="0 0 120 120"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
           style={{ width: '88%', height: '88%' }}
         >
           <defs>
